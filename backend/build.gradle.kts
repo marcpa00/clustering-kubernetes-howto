@@ -19,6 +19,7 @@ dependencies {
 }
 
 application {
+  applicationDefaultJvmArgs = listOf("-Djava.net.preferIPv4Stack=true")
   mainClassName = verticle
 }
 

@@ -270,7 +270,7 @@ endif::env-github[]
 You can start each service:
 
 * straight from your IDE or,
-* with Maven: `mvn compile exec:java`, or
+* with Maven: `mvn compile exec:exec`, or
 * with Gradle: `./gradlew run` (Linux, macOS) or `gradlew run` (Windows).
 
 The _frontend_ service output should print a message similar to the following:

@@ -52,9 +52,15 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
-        <version>1.5.0</version>
+        <version>3.0.0</version>
         <configuration>
-          <mainClass>${verticle}</mainClass>
+          <executable>java</executable>
+          <arguments>
+            <argument>-Djava.net.preferIPv4Stack=true</argument>
+            <argument>-classpath</argument>
+            <classpath/>
+            <argument>${verticle}</argument>
+          </arguments>
         </configuration>
       </plugin>
       <plugin>
